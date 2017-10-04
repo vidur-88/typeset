@@ -1,8 +1,8 @@
 Overview
 ========
 
-This is for creating a blogs.
-It supports comments on paragraphs. Not comments on the blog, but on a specific paragraph. 
+This is APIs for creating a blogs.
+It supports comments on paragraphs. Not comments on the blog, but on a specific paragraph.
 There are 3 tables for storing blogs that are blog, paragraph, comment.
 
 Blog:
