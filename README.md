@@ -85,24 +85,31 @@ Example:
 +   **Add paragraph**
 
     /blogs/add_blog_paragraph (POST Call)
-    params: {"blog_id": xxx, "prev_priority": xxx, "next_priority": xxxx,
-    "text": "xxxxx"}
-    response: {paragraph_id: {"priority": xxx, "text": "xxxxxxxxx"}}
+
+    params: `{"blog_id": xxx, "prev_priority": xxx, "next_priority": xxxx, "text": "xxxxx"}`
+
+    response: `{paragraph_id: {"priority": xxx, "text": "xxxxxxxxx"}}`
 
 +   **Paragraph updation for a blog**
 
     /blogs/update_blog_paragraph (POST call)
-    params: {"paragraph_id": xxxx, "text": "xxxxxxx"}
-    response: {paragraph_id: "xxxxxxxxxxxxx"}
+
+    params: `{"paragraph_id": xxxx, "text": "xxxxxxx"}`
+
+    response: `{paragraph_id: "xxxxxxxxxxxxx"}`
 
 +   **Add comment for a paragraph**
 
     /blogs/add_comment (POST call)
-    params: {"paragraph_id": xxx, "text": "xxxxxxxxxx"}
-    response: {"text": "xxxxxxxxxx", "comment_id": xxx}
+
+    params: `{"paragraph_id": xxx, "text": "xxxxxxxxxx"}`
+
+    response: `{"text": "xxxxxxxxxx", "comment_id": xxx}`
 
 +   **Update comment**
 
     /blogs/update_blog_paragraph (POST call)
-    params: {"paragraph_id": xxx, "text": "xxxxxxxxxxxxx"}
-    response: {"text": "xxxxxxxxxxxxx", "comment_id": xxx}
+
+    params: `{"paragraph_id": xxx, "text": "xxxxxxxxxxxxx"}`
+
+    response: `{"text": "xxxxxxxxxxxxx", "comment_id": xxx}`
