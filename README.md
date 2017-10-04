@@ -46,9 +46,9 @@ Please use [PIP](http://pypi.python.org/pypi/pip) to manage your python environm
 Run
 ---
 
-python manage.py makemigration
-python manage.py migrate
-python manage.py runserver 0.0.0.0:8000
+  `python manage.py makemigration`
+  `python manage.py migrate`
+  `python manage.py runserver 0.0.0.0:8000`
 
 Hit http://localhost:8000 in your browser
 
@@ -59,23 +59,28 @@ Example:
 +   **Blogs list**
 
     /blogs/all (GET call)
-    response: {"data": [`list of all blogs`]}
+
+    response: `{"data": ["list of all blogs"]}`
 
 +   **Particular Blog**
 
     /blogs/get_blog?blog_id=2 (GET call)
-    response: {`paragraph_id_`: `paragraph_text`}
+
+    response: `{"paragraph_id": "paragraph_text"}`
 
 +   **All comments for a blog**
 
     /blogs/blog_comments?blog_id=2 (GET call)
-    response: {`paragraph_id`: [`list of comments`]
+
+    response: `{"paragraph_id": ["list of comments"]}`
 
 +   **Create a new blog**
 
     /blogs/create_blog (POST call)
-    params: {'title': 'xxxxxxx', 'texts': 'xxxxxxxxxxxxxxxxxxxxx'}
-    response: {"blog_id": xxx, "paragraph": {paragraph_id_: {"priority": xxx, "text": "xxxxxx"}}}
+
+    params: `{'title': 'xxxxxxx', 'texts': 'xxxxxxxxxxxxxxxxxxxxx'}`
+
+    response: `{"blog_id": xxx, "paragraph": {paragraph_id_: {"priority": xxx, "text": "xxxxxx"}}}`
 
 +   **Add paragraph**
 
